@@ -1,0 +1,34 @@
+@media all and (min-width:631px) and (max-width:960px){
+/*----------------------------------------헤더영역------------------------------------------------*/
+    #logo > img{
+        height: unset;
+    }
+    #m_t_nav{
+        right: 10%;
+    }
+/*-------------------------------------커피메뉴 리스트 영역---------------------------*/
+    #coffee_menu_button > div{
+        font-size: 18px;
+    }
+    #coffee_menu_list > li{
+        width: 29.3333333333%;
+        margin: 20px 2%;
+    }
+/*-----------------------------------------------푸터----------------------------*/
+    #footer_1 > li{
+        width: 33.33333333%;
+    }
+    #footer_2 > li:first-child{
+        width: 100%;
+    }
+    #footer_2 > li{
+        float: left;
+        width:50%;
+    }
+    #footer_1 > li > a{
+        font-size: 14px;
+    }
+    #footer_2 > li > h3{
+        font-size: 12px;
+    }
+}

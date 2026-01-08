@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'GmarketSansMedium',"sans-serif";
+    font-weight: bold;
+    background-color: #333333;
+}
+#header{
+    z-index: 50;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#header > ul::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#header > ul{
+    width:1200px;
+    margin: 0 auto;
+}
+#header > ul > li{
+    color: #dddddd;
+    text-align: center;
+    float: left;
+    width: 33.33333333333%;
+    padding: 30px 0;
+    cursor: pointer;
+    transform:s;
+}
+#header > ul > li:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#main_section{
+    min-width: 1200px;
+    height: 800px;
+    background-image: url("../imgs/main_background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.skew{
+    overflow: hidden;
+    min-width: 1200px;
+    transform-origin: 0 0;
+    transform: skewY(-5deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 5px solid #a58500;
+}
+#intro_section{
+    background-image: url("../imgs/intro_background.png");
+}
+#skill_section{
+    background-image: url("../imgs/skill_background.png");
+}
+#design_section{
+    background-image: url("../imgs/design_backgorund.png");
+    border-bottom: 5px solid #a58500;
+}
+.skew_clear{
+    width: 1200px;
+    margin: 0 auto;
+    transform-origin: 0 0;
+    transform: skewY(5deg);
+}
+/*---------------------------------------------자기소개 영역------------------------------------------*/
+#intro{
+    margin-top: 50px;
+    margin-bottom: 140px;
+}
+.title{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: #a58500;
+}
+#intro > div::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#intro > div{
+    text-align: center;
+}
+#intro > div > img{
+    margin-top: 60px;
+}
+#intro > div > div{
+    width: 50%;
+    float: right;
+    font-size: 24px;
+    color: #dddddd;
+    font-weight: 100;
+    text-align: left;
+    line-height: 2;
+}
+/*----------------------------------------스킬영역--------------------------------------*/
+#skill{
+    margin-top: 50px;
+    margin-bottom: 140px;
+}
+#skill > ul::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#skill > ul > li{
+    float: left;
+    width: 50%;
+}
+#skill > ul > li::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#skill > ul > li > div{
+    float: left;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#skill > ul > li:first-child > div > p{
+    font-size: 24px;
+    color: #ddd;
+    margin-bottom: 80px;
+}
+#skill > ul > li:last-child > div > p{
+    font-size: 24px;
+    color: #c5a830;
+    margin-bottom: 100px;
+    position: relative;
+}
+#skill > ul > li:last-child > div > p::after{
+    content: "";
+    display: block;
+    height: 20px;
+    background-color: #c5a830;
+    position: absolute;
+    left: 0;
+    top: 150%;
+}
+#skill > ul > li:last-child > div > p:first-child::after{
+    width: 170px;
+}
+#skill > ul > li:last-child > div > p:nth-child(2)::after{
+    width: 200px;
+}
+#skill > ul > li:last-child > div > p:nth-child(3)::after{
+    width: 180px;
+}
+#skill > ul > li:last-child > div > p:nth-child(4)::after{
+    width: 80px;
+}
+#skill > ul > li:last-child > div > p:last-child::after{
+    width: 50px;
+}
+/*---------------------------------------------디자인 영역-----------------------------------------------------------*/
+#design{
+    margin-top: 50px;
+    margin-bottom: 140px;
+}
+#design > div{
+    position: relative;
+}
+#left_bt{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#right_bt{
+    position: absolute;
+    top:50%;
+    left:100%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#slide{
+    width: 1080px;
+    height: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+#slide:active{
+    cursor:grab;
+}
+#slide > ul{
+    position: relative;
+    width: 600%;
+    height: 100%;
+    z-index: -1;
+}
+#slide > ul::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#slide > ul > li{
+    height: 100%;
+    width: 16.66666666666667%;
+    float: left;
+    text-align: center;
+}
+#slide > ul > li > img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*----------------------------------------------푸터영역------------------------------------*/
+#footer > div{
+    text-align: center;
+    color: #a58500;
+    font-size: 100px;
+    margin: 100px 0;
+}

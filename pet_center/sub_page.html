@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub_css.css">
+    <title>PET CENTER SUB</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="top_menu">
+            <ul>
+                <li><a href="index.html">반려동물미아신고센터</a></li>
+                <li>
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">즐겨찾기 추가</a>
+                    <a href="#">마이페이지</a>
+                </li>
+            </ul>
+        </div>
+        <ul id="bottom_menu">
+            <li><a href="#">실종신고</a></li>
+            <li><a href="#">목격신고</a></li>
+            <li><a href="#">전단지</a></li>
+            <li><a href="#">Q & A</a></li>
+            <li><a href="#">에러신고</a></li>
+        </ul>
+        <div id="forms">
+            <div>
+                <h1>실종신고 양식</h1>
+                <form action="/asd" method="POST">
+                    <div>
+                        <p>게시판 제목</p>
+                        <input type="text" name="title">
+                    </div>
+                    <div>
+                        <p>사진</p>
+                        <input type="file" name="photo">
+                    </div>
+                    <div>
+                        <p>이름</p>
+                        <input type="text" name="name">
+                    </div>
+                    <div>
+                        <p>성별</p>
+                        <input type="radio" name="gender" value="male">
+                        <label for="gender">수컷</label>
+                        <input type="radio" name="gender" value="female">
+                        <label for="gender">암컷</label>
+                    </div>
+                    <div>
+                        <p>실종날짜</p>
+                        <input type="date" name="date">
+                    </div>
+                    <div>
+                        <p>실종장소</p>
+                        <div>
+                            <div>
+                                <input type="text" neme="location">
+                                <button>우편번호선택</button>
+                            </div>
+                            <input type="text" name="details">
+                        </div>
+                    </div>
+                    <div>
+                        <p>특이사항</p>
+                        <textarea></textarea>
+                    </div>
+                    <div>
+                        <p>연락처</p>
+                        <input type="text">
+                        <p>-</p>
+                        <input type="text">
+                        <p>-</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <input type="submit" value="작성완료">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer id="footer">
+            <div>
+                <div><a href="index.html">반려동물미아신고센터</a></div>
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">저작권안내</a></li>
+                    <li>This site is for portfolios.</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

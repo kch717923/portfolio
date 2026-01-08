@@ -1,0 +1,172 @@
+@media all and (min-width:631px) and (max-width:960px){
+/*----------------------------------------헤더영역------------------------------------------------*/
+    #logo > img{
+        height: unset;
+    }
+    #m_t_nav{
+        right: 10%;
+    }
+/*----------------------------------------메인 이벤트---------------------------------*/
+    #coffee_imglist::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #coffee_imglist > li{
+        width:50%;
+        float: left;
+    }
+    #coffee_imglist > li > div{
+        width:100%;
+        height: unset;
+    }
+    #coffee_imglist > li > div:last-child > div{
+        top:unset;
+        left: unset;
+        transform: unset;
+        font-size: 16px;
+    }
+    #coffee_imglist > li > div > img{
+        max-width: unset;
+        width: unset;
+    }
+/*----------------------------------------------바---------------------------*/
+    #bar::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #bar > div{
+        width:50%;
+        float: left;
+    }
+/*--------------------------------------------프로모션 롤링-------------------------------------*/
+    #promotion_rolling{
+        margin: 0 auto;
+        overflow:unset;
+        width: 550px;
+    }
+    #promotion_rolling > ul{
+        width: 400%;
+    }
+    #promotion_rolling > ul{
+        margin-left: -100%;
+    }
+/*-----------------------------------------------맴버쉽---------------------------*/
+    #membership{
+        background-image:url(../imgs/membership_background.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #membership_box::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #membership_box{
+        height: 400px;
+    }
+    #membership_box > div{
+        position: relative;
+        top:50%;
+        transform: translateY(-50%);
+        float: left;
+        width: 50%;
+        text-align: center;
+        padding: unset;
+    }
+    #membership_box > .move_obj.move{
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(-50%,-50%);
+    }
+    #membership_box > div > .move_obj.move{
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(50%,0);
+    }
+    /*---------------------------------------------------브랜드 소개--------------------------------*/
+    #brand_text > ul > li > h2{
+        font-size: 17px;
+    }
+    /*-----------------------------------------프렌차이즈---------------------------------------------*/
+    #franchise{
+        height: 400px;
+    }
+
+    #franchise::before{
+        top:20%
+    }
+    #franchise::after{
+        bottom: 20%;
+    }
+    #franchise_box{
+        height: 100%;
+        width: 100%;
+    }
+    #franchise_box::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #franchise_box > div{
+        width:50%;
+        float: right;
+        position: relative;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    #franchise_box > div > img{
+        width:90%;
+        max-width: 300px;
+    }
+/*---------------------------------------------매장찾기---------------------------*/
+    #find_store{
+        height: 400px;
+    }
+
+    #find_store::before{
+        top:20%
+    }
+    #find_store::after{
+        bottom: 20%;
+    }
+    #find_store_box{
+        height: 100%;
+        width: 100%;
+    }
+    #find_store_box::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #find_store_box > div{
+        width:50%;
+        float: left;
+        position: relative;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    #find_store_box > div > img{
+        width:90%;
+        max-width: 300px;
+    }
+/*-----------------------------------------------푸터----------------------------*/
+    #footer_1 > li{
+        width: 33.33333333%;
+    }
+    #footer_2 > li:first-child{
+        width: 100%;
+    }
+    #footer_2 > li{
+        float: left;
+        width:50%;
+    }
+    #footer_1 > li > a{
+        font-size: 14px;
+    }
+    #footer_2 > li > h3{
+        font-size: 12px;
+    }
+}
+

@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'ELAND_Choice_M','sans-serif';
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+input,button{
+    all:unset;
+}
+/*-------------------------메뉴 영역------------------------------------------------------*/
+#top_menu{
+    min-width: 1200px;
+    background-color: #ffc600;
+}
+#top_menu > ul::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#top_menu > ul{
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 50px;
+    
+}
+#top_menu > ul > li:first-child{
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+#top_menu > ul > li:last-child{
+    float: right;
+}
+#top_menu > ul > li:first-child > a{
+    color: #333;
+    margin-left: 30px;
+}
+#top_menu > ul > li::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#top_menu > ul > li:last-child > a{
+    float: left;
+    color: #333;
+    margin:  0 30px;
+}
+#bottom_menu{
+    width: 1200px;
+    margin: 0 auto;
+}
+#bottom_menu::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#bottom_menu > li{
+    width: 20%;
+    float: left;
+    font-size: 24px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+#bottom_menu > li > a{
+    color: #333;
+}
+/*----------------------------------------------메인 이미지 영역-------------------------------*/
+#main_img{
+    position: relative;
+    min-width: 1200px;
+    overflow: hidden;
+}
+#main_img > img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#main_img > div{
+    position: absolute;
+    top:0;
+    bottom:0;
+    width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#main_img > div > form{
+    position: absolute;
+    right: 170px;
+    bottom: 100px;
+    background-color: rgba(255, 198, 0, 0.8);
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+#main_img > div > form > h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0;
+    text-align: center;
+}
+#main_img > div > form > div{
+    border-radius: 15px;
+    margin: 10px 50px;
+    background-color: white;
+}
+#main_img > div > form > div::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#main_img > div > form > div > input{
+    display: block;
+    float: left;
+    width: 200px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+#main_img > div > form > div > button{
+    position: relative;
+    cursor: pointer;
+    display: block;
+    float: left;
+    padding: 0 20px;
+    line-height: 30px;
+    font-size: 14px;
+}
+#main_img > div > form > div > button::after{
+    display: block;
+    content: "";
+    width: 2px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: #aaa;
+}
+/*-------------------------슬라이드 영역--------------------------------------------*/
+#slide_box{
+    width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+#slide_box > ul{
+    width: 133.3333333332%;
+}
+#slide_box > ul::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#slide_box > ul > li{
+    width: 25%;
+    float: left;
+}
+#slide_box > ul > li > a{
+    margin: 0 30px;
+}
+/*----------------------------게시판 영역--------------------------------------------------*/
+#board{
+    background-color: #ffc600;
+}
+#board > div{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+#board > div::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#board > div > div{
+    position: relative;
+    float: left;
+    width: 33.3333333333%;
+}
+#board > div > div:first-child::after,#board > div > div:nth-child(2)::after{
+    display: block;
+    content: "";
+    width: 1px;
+    height: 80%;
+    background-color: #333;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#board > div > div > h1 > a{
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+#board > div > div > p > a{
+    padding: 0 30px;
+    color: #333;
+    line-height: 2.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*----------------------------------기타 모음 영역--------------------------------*/
+#notice > div{
+    width: 1200px;
+    margin: 50px auto;
+}
+#notice > div::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#notice > div > div{
+    width: 50%;
+    float: left;
+}
+#notice > div > div > h1{
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+#notice > div > div > p{
+    margin-left: 130px;
+}
+#notice > div > div:first-child > p > a{
+    display: inline-block;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#notice > div > div:last-child > p{
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+#notice > div > div:last-child > p:nth-child(odd){
+    font-size: 30px;
+    color: #ffc600;
+    margin-bottom: 25px;
+    margin-left: 180px;
+}
+/*------------------------------푸터영역---------------------------------*/
+#footer{
+    background-color: #888;
+}
+#footer > div{
+    width: 1200px;
+    margin: 0 auto;
+}
+#footer > div::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#footer > div > div{
+    float: left;
+    width: 20%;
+}
+#footer > div > ul{
+    float: left;
+    width: 80%;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 10%;
+}
+#footer > div > div > a{
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 60px 0;
+    text-align: center;
+}
+#footer > div > ul::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#footer > div > ul > li{
+    float: left;
+    width: 33.3333333333%;
+    text-align: center;
+}
+#footer > div > ul > li > a{
+    display: inline-block;
+    color: #333;
+}
+#footer > div > ul > li:last-child{
+    width: 100%;
+    line-height: 4;
+    color: #333;
+}

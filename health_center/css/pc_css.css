@@ -1,0 +1,209 @@
+@media all and (min-width:1020px){
+    
+/*-------------------------------------헤더영역----------------------------------------------------*/
+    #first_header{
+        margin: 0 auto;
+        max-width: 1200px;
+        position: relative;
+        height: 80px;
+    }
+    #first_header > a:first-child{
+        position: absolute;
+        display: block;
+        top:50%;
+        left:10%;
+        transform: translateY(-50%);
+    }
+    #first_header > a:nth-child(2){
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    #search{
+        width: 300px;
+        position: absolute;
+        top:50%;
+        right: 10%;
+        transform: translateY(-50%);
+    }
+    header{
+        position: relative;
+    }
+    header::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top:80px;
+        background-color: #555;
+    }
+    #menu_button{
+        display: none;
+    }
+    #close_button{
+        display: none;
+    }
+    #last_header{
+        background-color: unset;
+        position: unset;
+        padding: unset;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #last_header > ul{
+        height: unset;
+        overflow-y: unset;
+    }
+    #last_header > ul::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    .main_menu{
+        position: relative;
+        float: left;
+        width: 14.2857%;
+    }
+    .main_menu > a{
+        padding: 20px 0;
+        text-align: center;
+        margin: unset;
+        font-size: 15px;
+        border: unset;
+    }
+    .sub_menu{
+        position: absolute;
+        top:100%;
+        left: 0;
+        z-index: 1;
+    }
+    .sub_menu > li > a{
+        white-space: nowrap;
+        padding: 10px 30px;
+        font-size: 14px;
+        color: #555;
+        background-color: #eee;
+        border:unset;
+    }
+/*-------------------------메인 이미지--------------------------------------*/
+    #main_img{
+        margin-top: unset;
+    }
+    #main_img > ul > li:last-child > p:first-child,#main_img > ul > li:last-child > p:nth-child(2){
+        font-size: 30px;
+        line-height: 2;
+    }
+    #main_img > ul > li:last-child > p:first-child > span,#main_img > ul > li:last-child > p:nth-child(2) > span{
+        font-size: 45px;
+    }
+    #main_img > ul > li:last-child > p:nth-child(3),#main_img > ul > li:last-child > p:nth-child(4){
+        font-size: 24px;
+        line-height: 2;
+    }
+/*--------------------------숏컷 영역-------------------------------------*/
+    #short_cut_list > ul > li{
+        width: 25%;
+    }
+/*------------------------시간 안내 영역---------------------------*/
+    #time_guide{
+        background-image: url("../imgs/time_guide_t_p.png");
+    }
+    #time_guide > ul::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #time_guide > ul > li{
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+    }
+    #backgorund_color1{
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 50%;
+    }
+    #backgorund_color2{
+        top:0;
+        bottom: 0;
+        left:50%;
+        right: 0;
+    }
+    #time_guide > ul > li > p{
+        font-size: 18px;
+    }
+/*---------------------공지사항 배너 영역----------------------------------*/
+    #board_slide{
+        margin: unset;
+    }
+    #board_slide > ul{
+        height: 400px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #board_slide > ul::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #borad{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        margin: 0 5%;
+    }
+    #slide{
+        top: 50%;
+        transform: translateY(-50%);
+        float: left;
+        width: 30%;
+        margin: 0 5%;
+    }
+/*--------------------------------서브 서치 영역-------------------------------------------------*/
+    #sub_search > ul::after{
+        display: block;
+        clear: both;
+        content: "";
+    }
+    #sub_search > ul > li{
+        width: 50%;
+        float: left;
+    }
+    #sub_search > ul > li::after{
+        display: block;
+        clear: both;
+        content: "";
+    }
+    #sub_search > ul > li:first-child{
+        background-color: #555;
+    }
+    #sub_search > ul > li:last-child{
+        background-color: #2a7d99;
+    }
+    #vaccination{
+        width: 100%;
+        max-width: 600px;
+        float: right;
+        margin: unset;
+    }
+    #hospital{
+        width: 100%;
+        max-width: 600px;
+        float: left;
+    }
+/*-----------------------------------푸터 영역---------------------------------------------------*/
+    #top_footer{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #bottom_footer{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

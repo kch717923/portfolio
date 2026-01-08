@@ -1,0 +1,58 @@
+@media all and (min-width: 630px) and (max-width:1019px){
+
+/*-------------------------메인 이미지--------------------------------------*/
+    #main_img > ul > li:last-child > p:first-child,#main_img > ul > li:last-child > p:nth-child(2){
+        font-size: 30px;
+        line-height: 2;
+    }
+    #main_img > ul > li:last-child > p:first-child > span,#main_img > ul > li:last-child > p:nth-child(2) > span{
+        font-size: 45px;
+    }
+    #main_img > ul > li:last-child > p:nth-child(3),#main_img > ul > li:last-child > p:nth-child(4){
+        font-size: 24px;
+        line-height: 2;
+    }
+/*--------------------------숏컷 영역-------------------------------------*/
+    #short_cut_list > ul > li{
+        width: 33.333333333%;
+    }
+    #short_cut_list > ul > li:nth-child(7){
+        margin-left: 16%;
+    }
+    #short_cut_list > ul > li:nth-child(8){
+        margin-right: 16%;
+    }
+/*------------------------시간 안내 영역---------------------------*/
+    #time_guide{
+        background-image: url("../imgs/time_guide_t_p.png");
+    }
+    #time_guide > ul::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #time_guide > ul > li{
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+    }
+    #backgorund_color1{
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 50%;
+    }
+    #backgorund_color2{
+        top:0;
+        bottom: 0;
+        left:50%;
+        right: 0;
+    }
+/*---------------------공지사항 배너 영역----------------------------------*/
+    #slide{
+        width: 60%;
+    }
+/*--------------------------------서브 서치 영역-------------------------------------------------*/
+/*-----------------------------------푸터 영역---------------------------------------------------*/
+
+}

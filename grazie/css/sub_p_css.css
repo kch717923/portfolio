@@ -1,0 +1,156 @@
+@media all and (min-width:961px){
+/*----------------------------------------헤더영역------------------------------------------------*/
+    #m_t_nav{
+        display: none;
+    }
+    #header_size{
+        max-width: 1200px;
+    }
+    #top_nav{
+        display: block;
+        position: absolute;
+        top:15%;
+        right:10%;
+    }
+    #top_nav > ul::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #top_nav > ul > li{
+        float: left;
+        position: relative;
+    }
+    #top_nav > ul > li > a{
+        color: #333333;
+        font-size: 13px;
+        padding: 0 20px;
+    }
+    #top_nav > ul > li:not(:last-child)::after{
+        display: block;
+        content: "";
+        background-color: #333;
+        width: 1px;
+        height: 15px;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+    #bottom_nav{
+        display: block;
+        position: absolute;
+        bottom: 15%;
+        right: 10%;
+        top:unset;
+        width: unset;
+        background-color: unset;
+    }
+    #bottom_nav > ul::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #bottom_nav > ul > li{
+        float: left;
+        position: relative;
+    }
+    #bottom_nav > ul > li > a{
+        color: #333333;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 30px;
+    }
+    .sub_menu{
+        display: none;
+        background-color:  #f8f5ee;
+        position: absolute;
+        top:130%;
+        left:50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        text-align: center;
+        box-shadow: 3px 3px 3px #555;
+    }
+
+    .sub_menu > li > a:hover{
+        background-color: wheat;
+    }
+    .sub_menu > li > a{
+        font-size: 14px;
+        color: #333;
+        padding: 7px 20px;
+    }
+    #clear{
+        display: none;
+    }
+    #logo > img{
+        height: unset;
+    }
+    #m_t_nav > a > img{
+        height: unset;
+    }
+    #m_t_nav{
+        right: 10%;
+    }
+/*------------------------------------------메인 이미지 영역---------------------------*/
+    #main_img > div{
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: -250px;
+    }
+    #main_img > div::after{
+        display: block;
+        clear: both;
+        content: "";
+    }
+    #main_img > div > img,#main_img > div > p{
+        width: 40%;
+        margin: 0 5%;
+        float: left;
+    }
+    #main_img > div > p{
+        margin-top: 250px;
+    }
+/*-------------------------------------커피메뉴 리스트 영역---------------------------*/
+    #coffee_menu_button{
+        max-width: 1200px;
+        margin: 50px auto;
+    }
+    #coffee_menu_button > div{
+        font-size: 18px;
+    }
+    #coffee_menu_list{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #coffee_menu_list > li{
+        width: 23%;
+        margin: 20px 1%;
+    }
+/*----------------------------------------푸터-------------------------------*/
+    #footer_1{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #footer_1 > li{
+        width: 25%;
+    }
+    #footer_2{
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    #footer_2 > li:first-child{
+        width: 100%;
+    }
+    #footer_2 > li{
+        float: left;
+        width:50%;
+    }
+    #footer_1 > li > a{
+        font-size: 14px;
+    }
+    #footer_2 > li > h3{
+        font-size: 12px;
+    }
+}

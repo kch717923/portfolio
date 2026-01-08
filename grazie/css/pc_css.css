@@ -1,0 +1,292 @@
+@media all and (min-width:961px){
+/*----------------------------------------헤더영역------------------------------------------------*/
+    #m_t_nav{
+        display: none;
+    }
+    #header_size{
+        max-width: 1200px;
+    }
+    #top_nav{
+        display: block;
+        position: absolute;
+        top:15%;
+        right:10%;
+    }
+    #top_nav > ul::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #top_nav > ul > li{
+        float: left;
+        position: relative;
+    }
+    #top_nav > ul > li > a{
+        color: #333333;
+        font-size: 13px;
+        padding: 0 20px;
+    }
+    #top_nav > ul > li:not(:last-child)::after{
+        display: block;
+        content: "";
+        background-color: #333;
+        width: 1px;
+        height: 15px;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+    #bottom_nav{
+        display: block;
+        position: absolute;
+        bottom: 15%;
+        right: 10%;
+        top:unset;
+        width: unset;
+        background-color: unset;
+    }
+    #bottom_nav > ul::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #bottom_nav > ul > li{
+        float: left;
+        position: relative;
+    }
+    #bottom_nav > ul > li > a{
+        color: #333333;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 30px;
+    }
+    .sub_menu{
+        display: none;
+        background-color:  #f8f5ee;
+        position: absolute;
+        top:130%;
+        left:50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        text-align: center;
+        box-shadow: 3px 3px 3px #555;
+    }
+
+    .sub_menu > li > a:hover{
+        background-color: wheat;
+    }
+    .sub_menu > li > a{
+        font-size: 14px;
+        color: #333;
+        padding: 7px 20px;
+    }
+    #clear{
+        display: none;
+    }
+    #logo > img{
+        height: unset;
+    }
+    #m_t_nav > a > img{
+        height: unset;
+    }
+    #m_t_nav{
+        right: 10%;
+    }
+/*-------------------------------------------메인 이벤트-------------------------------------------------*/
+
+    #coffee_imglist::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #coffee_imglist{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #coffee_imglist > li{
+        width:25%;
+        float: left;
+    }
+    #coffee_imglist > li > div{
+        width:100%;
+        height: unset;
+    }
+    #coffee_imglist > li > div:last-child > div{
+        top:unset;
+        left: unset;
+        transform: unset;
+        font-size: 16px;
+    }
+    #coffee_imglist > li > div > img{
+        max-width: unset;
+        width: unset;
+    }
+/*----------------------------------------------바---------------------------*/
+    #bar::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #bar > div{
+        width:50%;
+        float: left;
+    }
+/*--------------------------------------------프로모션 롤링-------------------------------------*/
+    #promotion_rolling{
+        margin: 0 auto;
+        overflow:unset;
+        width: 650px;
+    }
+    #promotion_rolling > ul{
+        margin-left: -100%;
+    }
+/*-----------------------------------------------맴버쉽---------------------------*/
+    #membership{
+        background-image:url(../imgs/membership_background.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #membership_box::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #membership_box{
+        margin: 0 auto;
+        max-width: 960px;
+        height: 400px;
+    }
+    #membership_box > div{
+        position: relative;
+        top:50%;
+        transform: translateY(-50%);
+        float: left;
+        width: 50%;
+        text-align: center;
+        padding: unset;
+    }
+    #membership > div > img{
+        width: 90%;
+    }
+    #membership_box > .move_obj.move{
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(-50%,-50%);
+    }
+    #membership_box > div > .move_obj.move{
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(50%,0);
+    }
+/*---------------------------------------------------브랜드 소개--------------------------------*/
+    #brand_box{
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 600px;
+    }
+    #brand_box::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #brand_box > div{
+        position: relative;
+        top:50%;
+        transform: translateY(-50%);
+        width:50%;
+        float: left;
+    }
+    #brand_text > ul > li > h2{
+        font-size: 17px;
+    }
+/*-----------------------------------------프렌차이즈---------------------------------------------*/
+     #franchise{
+        height: 500px;
+    }
+
+    #franchise::before{
+        top:20%
+    }
+    #franchise::after{
+        bottom: 20%;
+    }
+    #franchise_box{
+        height: 100%;
+        width: 100%;
+        max-width: 1200px;
+    }
+    #franchise_box::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #franchise_box > div{
+        width:50%;
+        float: right;
+        position: relative;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    #franchise_box > div > img{
+        width:90%;
+        max-width: 450px;
+    }
+/*---------------------------------------------매장찾기---------------------------*/
+    #find_store{
+        height: 500px;
+    }
+
+    #find_store::before{
+        top:20%
+    }
+    #find_store::after{
+        bottom: 20%;
+    }
+    #find_store_box{
+        height: 100%;
+        width: 100%;
+        max-width: 1200px;
+    }
+    #find_store_box::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #find_store_box > div{
+        width:50%;
+        float: left;
+        position: relative;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    #find_store_box > div > img{
+        width:90%;
+        max-width: 450px;
+    }
+/*----------------------------------------푸터-------------------------------*/
+    #footer_1{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #footer_1 > li{
+        width: 25%;
+    }
+    #footer_2{
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    #footer_2 > li:first-child{
+        width: 100%;
+    }
+    #footer_2 > li{
+        float: left;
+        width:50%;
+    }
+    #footer_1 > li > a{
+        font-size: 14px;
+    }
+    #footer_2 > li > h3{
+        font-size: 12px;
+    }
+}

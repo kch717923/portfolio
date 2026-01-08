@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-family: 'GmarketSansMedium','sans-serif';
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+#menu{
+    z-index: 6;
+    position: fixed;
+    top:3%;
+    left:3%;
+    cursor: pointer;
+}
+#overlay{
+    display: none;
+    z-index: 5;
+    position: fixed;
+    height: 100%;
+    top:0;
+    left:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#menu_box{
+    white-space: nowrap;
+    position: absolute;
+    width:30%;
+    min-width: 250px;
+    height: 100%;
+    top:-100%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #ccc;
+}
+#menu_box > ul{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#menu_box > ul > li{
+    color: #888;
+    font-weight: bold;
+    padding: 20px 0;
+    margin: 10px 0;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+}
+#menu_box > ul > li:hover{
+    color: #1e2d30;
+}
+#text_box{
+    max-height: 300px;
+    max-width: 960px;
+    margin: 0 auto;
+    z-index: 3;
+    position: fixed;
+    height: 40%;
+    bottom: 3%;
+    left:15%;
+    right: 15%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#text_box > div{
+    border: 1px solid white;
+    position: absolute;
+    top:10px;
+    left:10px;
+    right: 10px;
+    bottom: 10px;
+}
+.text_list{
+    max-height: 300px;
+    margin: 0 auto;
+    max-width:960px;
+    box-sizing:border-box;
+    padding: 50px;
+    z-index: 4;
+    position: absolute;
+    height: 40%;
+    bottom:3%;
+    left:15%;
+    right: 15%;
+}
+.text_list > h1{
+    font-size: 30px;
+    color: #f1ab86;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.text_list > h2{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+}
+.view_list::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.view_list > li{
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    float: left;
+}
+.view_list > li > a{
+    padding: 3% 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 12px;
+    transition-duration: 300ms;
+}
+.view_list > li > a:hover{
+    color: #1e2d30;
+    background-color: #ccc;
+    border-color: #1e2d30;
+}
+.text_list > h3{
+    color: white;
+    font-size: 13px;
+    margin: 10px 0;
+}
+.center_img{
+    width:60%;
+    max-width: 700px;
+    min-width: 300px;
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translateX(-50%);
+}
+.center_img > img{
+    box-shadow: 10px 10px 10px #000;
+    width: 100%;
+}
+#left_bt{
+    z-index: 3;
+    position: fixed;
+    top:50%;
+    left:5%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#right_bt{
+    z-index: 3;
+    position: fixed;
+    top:50%;
+    right:5%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#sections{
+    height: 100%;
+    overflow: hidden;
+}
+#sections > ul{
+    height: 100%;
+}
+#sections > ul::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#sections > ul > li{
+    position: relative;
+    float: left;
+    height: 100%;
+    background-color: #1e2d30;
+}

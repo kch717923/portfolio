@@ -1,0 +1,485 @@
+@font-face {
+    font-family: 'HangeulNuri-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'HangeulNuri-Bold','sans-serif';
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+input,button{
+    all:unset;
+}
+/*-------------------------------------헤더영역----------------------------------------------------*/
+header{
+    position: relative;
+}
+#first_header > a{
+    text-align: center;
+}
+#first_header > a:first-child{
+    display: none;
+}
+#first_header >a:nth-child(2){
+    width: 191px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+#search{
+    width: 80%;
+    margin: auto;
+    border: 1px solid #2a7d99;
+    border-radius: 10px;
+}
+#search > form::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#search > form > input{
+    float: left;
+    display: block;
+    height: 30px;
+    width: 85%;
+    padding-left: 5%;
+}
+#search > form > button{
+    float: left;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    text-indent: -9999px;
+    height: 30px;
+    width: 10%;
+    background-image: url("../imgs/search_img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#search > form > button::after{
+    display:block;
+    content: "";
+    position: absolute;
+    height: 23px;
+    width: 2px;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #2a7d99;
+}
+#overlay{
+    display: none;
+    position: fixed;
+    z-index: 50;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#last_header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    padding-top: 30px;
+    z-index: 51;
+}
+#menu_button{
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid #2a7d99;
+    top:17%;
+    right: 5%;
+    height: 40px;
+    width: 40px;
+}
+#last_header > ul{
+    height: 95%;
+    overflow-y: scroll;
+}
+.main_menu > a{
+    padding: 20px 35px;
+    margin: 0 15px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 2px solid #555;
+}
+.sub_menu{
+    min-width: 100%;
+    display: none;
+}
+.sub_menu > li > a{
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #555;
+    border-bottom: 1px solid #555;
+    background-color: #eee;
+}
+.sub_menu > li > a:hover{
+    background-color: #ddd;
+}
+#close_button{
+    height: 5%;
+}
+#menu_close_button{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#menu_close_button:hover  {
+    opacity: 0.7;
+}
+/*-------------------------메인 이미지--------------------------------------*/
+#main_img{
+    margin-top: 30px;
+}
+#main_img > ul{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#main_img > ul > li:first-child > img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#main_img > ul > li:last-child{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+}
+#main_img > ul > li:last-child > p:first-child,#main_img > ul > li:last-child > p:nth-child(2){
+    font-size: 18px;
+    line-height: 2;
+}
+#main_img > ul > li:last-child > p:first-child > span,#main_img > ul > li:last-child > p:nth-child(2) > span{
+    font-size: 25px;
+}
+#main_img > ul > li:last-child > p:nth-child(3),#main_img > ul > li:last-child > p:nth-child(4){
+    font-size: 14px;
+    line-height: 2;
+}
+/*--------------------------숏컷 영역-------------------------------------*/
+#short_cut_list > ul{
+    margin: 50px auto;
+    max-width: 1200px;
+}
+#short_cut_list > ul::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+#short_cut_list > ul > li{
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+#short_cut_list > ul > li:hover{
+    background-color: #eee;
+}
+#short_cut_list > ul > li > a{
+    color: #333;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 3;
+}
+/*------------------------시간 안내 영역---------------------------*/
+#time_guide{
+    position: relative;
+    background-image: url("../imgs/time_guide_m.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -2;
+}
+#backgorund_color1{
+    position: absolute;
+    top:0;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    background-color: rgba(42, 125, 153, 0.9);
+    z-index: -1;
+}
+#backgorund_color2{
+    position: absolute;
+    top:50%;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background-color: rgba(85, 85, 85, 0.9);
+    z-index: -1;
+}
+#time_guide > ul{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+#time_guide > ul > li{
+    padding: 40px 30px;
+    color: #fff;
+    white-space: nowrap;
+}
+#time_guide > ul > li > h1{
+    font-size: 30px;
+    line-height: 2;
+    text-align: center;
+}
+#time_guide > ul > li > p::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#time_guide > ul > li > p > span{
+    float: right;
+}
+#time_guide > ul > li > p{
+    font-size: 15px;
+    line-height: 4;
+    border-bottom: 1px solid #fff;
+}
+/*---------------------공지사항 배너 영역----------------------------------*/
+#board_slide{
+    margin: 50px 0;
+}
+#borad{
+    border: 3px solid #ccc;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#borad > div{
+    position: relative;
+}
+#borad > div::before{
+    display: block;
+    content: "";
+    width: 95%;
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#borad > div::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#borad > div > h2{
+    cursor: pointer;
+    position: relative;
+    float: left;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+#borad > div > h2.on::after{
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+}
+#borad > ul{
+    margin: 20px;
+}
+#borad > ul > li > a::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#borad > ul > li > a{
+    color: #555;
+    line-height: 30px;
+}
+#borad > ul > li > a > p{
+    font-size: 14px;
+    width: 70%;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#borad > ul > li > a > span{
+    font-size: 13px;
+    float: right;
+}
+#borad > ul{
+    display: none;
+}
+#borad > ul.on{
+    display: block;
+}
+#slide{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+#slide > ul{
+    width: 500%;
+}
+#slide > ul::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#slide > ul > li{
+    float: left;
+    width: 20%;
+}
+#slide > ul > li > a{
+    width: 100%;
+}
+#slide > ul > li > a > img{
+    width: 100%;
+}
+#slide > div{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+#slide > div::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+#slide > div > img,#slide > div > p{
+    float: left;
+}
+#slide > div > img{
+    cursor: pointer;
+}
+#slide > div > p{
+    text-align: center;
+    width: 50px;
+    line-height: 30px;
+    background-color: #333;
+    color: #fff;
+}
+/*--------------------------------서브 서치 영역-------------------------------------------------*/
+#vaccination{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    padding: 30px 50px;
+    width: 90%;
+    background-color: #555;
+    background-image: url("../imgs/baby_img.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+#vaccination > p{
+    color: #fff;
+    font-size: 24px;
+    line-height: 35px;
+}
+#vaccination > p:nth-child(3){
+    font-size: 16px;
+}
+#vaccination > form > div{
+    padding: 30px 0;
+}
+#vaccination > form > div > select{
+    width: 25%;
+    max-width: 170px;
+    padding: 8px 0;
+    margin: 1%;
+}
+#vaccination > form{
+    text-align: center;
+}
+#vaccination > form > button{
+    background-color: #333;
+    padding: 10px 0;
+    width: 70%;
+    color: #fff;
+    cursor: pointer;
+}
+#hospital{
+    width: 90%;
+    background-color: #2a7d99;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 30px 0;
+}
+#hospital > p{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    line-height: 35px;
+}
+#hospital > p:nth-child(2){
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+#hospital > form{
+    text-align: center;
+}
+#hospital > form > div > select{
+    padding: 8px 0;
+    margin-right: 15px;
+}
+#hospital > form > div > input{
+    padding: 8px 0;
+    text-align: left;
+    background-color: white;
+    width: 40%;
+    padding-left: 15px;
+}
+#hospital > form > div{
+    padding: 30px 0;
+}
+#hospital > form > button{
+    background-color: #003e52;
+    margin-top: 5px;
+    padding: 10px 0;
+    width: 70%;
+    color: #fff;
+    cursor: pointer;
+}
+/*-----------------------------------푸터 영역---------------------------------------------------*/
+#footer{
+    margin-top: 80px;
+    border-top: 2px solid #888;
+}
+#footer > div{
+    background-color: #333;
+}
+#top_footer::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#top_footer{
+    padding-left: 10%;
+}
+#top_footer > li{
+    float: left;
+}
+#top_footer > li > a{
+    color: #333;
+    font-size: 13px;
+    padding: 8px 20px;
+}
+#bottom_footer{
+    background-color: #333;
+    padding-top: 10px;
+    padding-left: 10%;
+    color: #888;
+    line-height: 2;
+}

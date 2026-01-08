@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'SDKukdetopokki';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDKukdetopokki.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoSerifKR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'NotoSerifKR','sans-serif';
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+/*----------------------------------------헤더영역------------------------------------------------*/
+#header{
+    z-index: 10;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #f8f5ee;
+}
+#header_size{
+    height: 70px;
+    position: relative;
+    margin: 0 auto;
+}
+#logo{
+    position: absolute;
+    left: 10%;
+    top:50%;
+    transform: translateY(-50%);
+}
+#m_t_nav{
+    position: absolute;
+    right: 0%;
+    top:50%;
+    transform: translateY(-50%);
+}
+#m_t_nav::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.nav_img{
+    margin: 0 20px;
+    float: left;
+}
+#top_nav{
+    display: none;
+}
+#bottom_nav{
+    z-index: 2;
+    position: fixed;
+    width: 40%;
+    right: -40%;
+    top:0;
+    bottom: 0;
+    background-color: #555;
+    text-align: center;
+}
+
+#bottom_nav > ul > li > a{
+    color: #eee;
+    font-size: 20px;
+    padding: 30px 0;
+}
+.sub_menu{
+    display: none;
+}
+
+.sub_menu > li > a{
+    color: #ccc;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+#clear{
+    text-align: left;
+}
+#clear > img{
+    cursor: pointer;
+    padding: 20px;
+}
+#logo > img{
+    height: 25px;
+}
+#m_t_nav > a > img{
+    height: 24px;
+}
+/*------------------------------------------메인 이미지 영역---------------------------*/
+#main_img{
+    overflow: hidden;
+    margin-top: 70px;
+}
+#main_img > img{
+    z-index: -1;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#main_img > div{
+    margin-top: -250px;
+    text-align: center;
+    z-index: 1;
+}
+#main_img > div > img{
+    max-width: 600px;
+    width: 80%;
+    box-shadow: 18px 18px 0 #513219;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition-duration: 1s;
+}
+#main_img > div > p{
+    padding: 100px 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: #513219;
+}
+/*-------------------------------------커피메뉴 리스트 영역---------------------------*/
+#coffee_menu_button{
+    margin: 50px 0;
+}
+#coffee_menu_button::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#coffee_menu_button > div{
+    float: left;
+    width: 23%;
+    margin: 0 1%;
+    text-align: center;
+    background-color: #674731;
+    padding: 20px 0;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+}
+#coffee_menu_button > div:hover{
+    background-color: #6f3909;
+}
+#coffee_menu_button > div.on{
+    background-color: #6f3909;
+}
+#coffee_menu_button > div:first-child{
+    width: 98%;
+    margin: 10px 1%;
+}
+#coffee_menu_list::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#coffee_menu_list > li{
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    border: 8px solid #674731;
+    width: 46%;
+    padding: 20px 0;
+    margin: 20px 2%;
+    text-align: center;
+    cursor: pointer;
+}
+#coffee_menu_list > li.on{
+    display: none;
+}
+#coffee_menu_list > li > img{
+    transition-duration: 500ms;
+}
+#coffee_menu_list > li:hover > img{
+    transform: scale(1.1);
+}
+#coffee_menu_list > li > h3{
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2;
+    color:#674731;
+}
+/*------------------------------------------푸터------------------------------------*/
+#footer{
+    background-color: #4a3323;
+    padding: 50px;
+    margin-top: 80px;
+}
+#footer_1::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#footer_1 > li{
+    white-space: nowrap;
+    float: left;
+    width:50%;
+    text-align: center;
+}
+#footer_1 > li > a{
+    font-size: 12px;
+    color: white;
+    line-height: 35px;
+}
+#footer_1 > li > a:hover{
+    text-decoration: underline;
+}
+#footer_2{
+    margin-top: 30px;
+}
+#footer_2::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#footer_2 > li{
+    white-space: nowrap;
+}
+#footer_2 > li > h3{
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    line-height: 30px;
+}
+.move_obj{
+    transition-duration: 1000ms;
+}
