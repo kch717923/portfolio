@@ -1,113 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/m_t_css.css">
-    <link rel="stylesheet" href="css/p_css.css">
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <title>INTRO</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<title>Portfolio - Your Name</title>
+	<meta name="description" content="Frontend Developer Portfolio - projects, skills, contact"/>
+	<link rel="stylesheet" type="text/css" href="./index.css" />
 </head>
 <body>
-    <header id="menu"><img src="imgs/menu_img.png" alt="menu_img"></header>
-    <div id="overlay">
-        <div id="menu_box">
-            <ul>
-                <li>Intro</li>
-                <li>Introduction</li>
-                <li>Grazie</li>
-                <li>Health Center</li>
-                <li>Pet center</li>
-                <li>Preparing</li>
-                <li>Outtro</li>
-            </ul>
-        </div>
-    </div>
-    <div id="text_box"><div></div></div>
-    <div id="left_bt"><img src="imgs/left_bt.png" alt="left_bt"></div>
-    <div id="right_bt"><img src="imgs/right_bt.png" alt="right_bt"></div>
-    <div id="sections">
-        <ul>
-            <li>
-                <div class="text_list">
-                    <h1>PORTFOLIO</h1>
-                    <h2>웹 퍼블리셔를 꿈꾸는 신입의 개인 포트폴리오 사이트입니다.</h2>
-                </div>
-            </li>
-            <li>
-                <a class="center_img" href="introduction/index.html">
-                    <img src="imgs/introduction.png" alt="individual">
-                </a>
-                <div class="text_list">
-                    <h1>Introduction</h1>
-                    <h2>PC 고정형 웹 사이트 입니다.</h2>
-                    <ul class="view_list">
-                        <li><a href="introduction/index.html">VIEW WEBSITE</a></li>
-                        <li><a href="http://colorscripter.com/s/skUznCb">VIEW CODE</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <a class="center_img" href="grazie/index.html">
-                    <img src="imgs/grazie_img.png" alt="grazie">
-                </a>
-                <div class="text_list">
-                    <h1>Grazie</h1>
-                    <h2>반응형 웹 사이트 입니다.</h2>
-                    <ul class="view_list">
-                        <li><a href="grazie/index.html">VIEW WEBSITE</a></li>
-                        <li><a href="http://colorscripter.com/s/B382d3V">VIEW CODE</a></li>
-                        <li><a href="grazie/sub_page.html">SUB PAGE</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <a class="center_img" href="health_center/index.html">
-                    <img src="imgs/health_center.png" alt="health_center">
-                </a>
-                <div class="text_list">
-                    <h1>Health Center</h1>
-                    <h2>반응형 웹 사이트 입니다.</h2>
-                    <ul class="view_list">
-                        <li><a href="health_center/index.html">VIEW WEBSITE</a></li>
-                        <li><a href="http://colorscripter.com/s/5U2zfIt">VIEW CODE</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <a class="center_img" href="pet_center/index.html">
-                    <img src="imgs/pet_center.png" alt="pet_center">
-                </a>
-                <div class="text_list">
-                    <h1>Pet Center</h1>
-                    <h2>PC 고정형 웹 사이트 입니다.</h2>
-                    <ul class="view_list">
-                        <li><a href="pet_center/index.html">VIEW WEBSITE</a></li>
-                        <li><a href="http://colorscripter.com/s/HgZ30hT">VIEW CODE</a></li>
-                        <li><a href="pet_center/sub_page.html">SUB PAGE</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <a class="center_img" href="#">
-                    <img src="imgs/preparing_img.png" alt="preparing_img">
-                </a>
-                <div class="text_list">
-                    <h1>Preparing</h1>
-                    <h2>사이트 제작중에 있습니다...</h2>
-                </div>
-            </li>
-            <li>
-                <div class="text_list">
-                    <h1>봐주셔서 감사합니다!</h1>
-                    <h3>NAME : kim chang hwi</h3>
-                    <h3>EMAIL : xhdrlfma@naver.com</h3>
-                    <h3>NUMBER : 010-7179-3397</h3>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <main class="portfolio" id="top">
+		<header class="portfolio__header">
+			<div class="portfolio__brand">
+				<div class="portfolio__logo">kch</div>
+				<div>
+				<div class="portfolio__title">김창휘</div>
+				<div class="portfolio__subtitle">
+					web publisher — HTML / CSS / JS
+				</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="portfolio__row">
+			<aside class="portfolio__skills">
+				<h3 class="portfolio__skills__tit">사용 가능한 툴 & 스킬</h3>
+				<ul class="portfolio__skills__list">
+					<li class="skill">HTML5</li>
+					<li class="skill">CSS3</li>
+					<li class="skill">SCSS</li>
+					<li class="skill">JS</li>
+					<li class="skill">Jquery</li>
+					<li class="skill">Responsive web</li>
+					<li class="skill">Gulp</li>
+					<li class="skill">Git / GitHub</li>
+					<li class="skill">Sourcetree</li>
+					<li class="skill">Figma / XD</li>
+					<li class="skill">Notion</li>
+				</ul>
+
+				<div style="margin-top: 12px">
+				<h4 style="margin: 0 0 8px 0">Contact</h4>
+				<p class="muted" style="margin: 0">kch717923@gmail.com · 광주</p>
+				</div>
+			</aside>
+			<section class="projects">
+				<h2 id="projects-heading">Projects</h2>
+				<div class="projects__grid">
+					<article class="project_card">
+						<div class="project_card__head">
+						<div>
+							<div class="project_card__title">취준생 포트폴리오</div>
+							<div class="project_card__meta">2021년 제작</div>
+						</div>
+						</div>
+						<p class="project_card__desc">
+							제가 취준생 시절 제작한 pc형 포트폴리오 인트로 사이트 입니다 스와이퍼 직접 구현이 들어있습니다.
+						</p>
+						<div class="project_card__actions">
+						<a class="btn btn--primary" href="./introduction/index.html" target="_blank">view</a>
+						</div>
+					</article>
+					<article class="project_card">
+						<div class="project_card__head">
+						<div>
+							<div class="project_card__title">카페 그라찌에</div>
+							<div class="project_card__meta">2021년 제작</div>
+						</div>
+						</div>
+						<p class="project_card__desc">
+							반응형 웹으로 작업 하였고 css 애니메이션, js 이벤트가 들어있습니다.
+						</p>
+						<div class="project_card__actions">
+						<a class="btn btn--primary" href="./grazie/index.html" target="_blank">main page</a>
+						<a class="btn btn--primary" href="./grazie/index.html" target="_blank">sub page</a>
+						</div>
+					</article>
+					<article class="project_card">
+						<div class="project_card__head">
+						<div>
+							<div class="project_card__title">광산구 보건소</div>
+							<div class="project_card__meta">2021년 제작</div>
+						</div>
+						</div>
+						<p class="project_card__desc">
+							반응형 웹으로 작업 하였고 css 애니메이션, js 이벤트가 들어있습니다.
+						</p>
+						<div class="project_card__actions">
+						<a class="btn btn--primary" href="./health_center/index.html" target="_blank">view</a>
+						</div>
+					</article>
+				</div>
+			</section>
+		</section>
+    </main>
 </body>
 </html>
+
+
+<!--
+
+- js 동작 & ani 관련
+html_fio/03_02_feedback.html
+html_fio/03_03_mission.html
+html_fio/04_02_pf_edit.html x
+html_fio/01_04_rgst_pf.html
+html_member/00_00_ad_landing_01.html
+html_member/00_00_ad_landing_02.html x
+html/18_05_ymti_main_list.html
+
+- 웹페이지
+html_fio/admin/cs_center.html
+html_fio/admin/management.html
+html_fio/admin/member.html
+html_fio/admin/pay.html
+
+- 사례 2
+랭킹은 들어가야함
+
+- 사례 3
+html/pop/00_00_pop_alert.html
+html/pop/00_00_pop_slct.html
+
+
+-->
